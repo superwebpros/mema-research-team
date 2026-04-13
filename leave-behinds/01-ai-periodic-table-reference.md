@@ -3,7 +3,11 @@
 
 ---
 
-## The 5 Elements You Used Today
+## The AI Periodic Table
+
+![AI Periodic Table](../docs/diagrams/ai-periodic-table.png)
+
+## The 5 Elements Used Today
 
 | Element | What It Is | Why It Matters | Your Lever |
 |---|---|---|---|
