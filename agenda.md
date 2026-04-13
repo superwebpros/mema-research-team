@@ -32,6 +32,7 @@ The Compound Sprint Framework (Signal → Source → Design → Build → Delive
   - 04 — Document Hygiene Cheat Sheet
   - 05 — Prompt Engineering Guide
   - 06 — AI Tools Landscape Reference
+  - 07 — Bonus: AI + Filesystem Paradigm (optional — feel out the room)
 - [ ] Presentation deck ready (see /deck/ folder)
 - [ ] Confirm WiFi access at MEMA office
 - [ ] Pre-build a NotebookLM notebook with the October Market Update loaded (saves demo time)
