@@ -47,7 +47,7 @@
 
 When you encounter an AI task, ask these five questions:
 
-1. **What's the task?** — Defines which elements you need
+1. **What's the outcome?** — What does success look like? Skills automate processes, not just tasks.
 2. **What data does it need?** — Upload, connector, or custom pipeline?
 3. **How repeatable is it?** — One-off = prompt. Recurring = skill. Automated = agent.
 4. **What could go wrong?** — Hallucination? Privacy? Quality?

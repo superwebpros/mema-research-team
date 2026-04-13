@@ -254,7 +254,7 @@
 **11:30 - 11:40 | Framework Review: How to Think About AI Problems (10 min)**
 - Return to the periodic table: "You've now worked with 4-5 of these elements hands-on"
 - **The problem-solving framework they're taking home:**
-  1. **What's the task?** → Defines which elements you need
+  1. **What's the outcome?** → What does success look like? Skills automate processes, not just tasks.
   2. **What data does it need?** → Determines retrieval strategy (upload, connector, or custom pipeline)
   3. **How repeatable is it?** → One-off = prompt. Recurring = skill. Automated = agent.
   4. **What could go wrong?** → Hallucination risk, data privacy, quality control

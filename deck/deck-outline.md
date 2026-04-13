@@ -245,7 +245,7 @@
 - "The question isn't 'will you use AI?' It's 'will each use make the next one better?'"
 
 ### Slide 29: The Problem-Solving Framework (Take-Home)
-1. What's the task? → Which periodic table elements do you need?
+1. What's the outcome? → What does success look like? Skills automate processes, not just tasks.
 2. What data does it need? → Upload, connector, or custom pipeline?
 3. How repeatable is it? → Prompt → Skill → Agent
 4. What could go wrong? → Hallucination, privacy, quality
