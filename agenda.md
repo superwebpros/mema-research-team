@@ -26,12 +26,12 @@ The Compound Sprint Framework (Signal → Source → Design → Build → Delive
 - [ ] Have the October 2025 MEMA Market Update PDF accessible for demos
 - [ ] Jesse: ChatGPT Business account logged in, Claude Pro account logged in, NotebookLM open
 - [ ] Bring printed leave-behinds (see /leave-behinds/ folder):
-  - AI Periodic Table one-pager
-  - Skills Quick-Start Guide
-  - Document Hygiene Cheat Sheet
-  - AI Tools Landscape Reference
-  - Prompt Engineering Guide
-  - RAG Primer
+  - 01 — AI Periodic Table Reference
+  - 02 — Skills Quick-Start Guide
+  - 03 — RAG Primer
+  - 04 — Document Hygiene Cheat Sheet
+  - 05 — Prompt Engineering Guide
+  - 06 — AI Tools Landscape Reference
 - [ ] Presentation deck ready (see /deck/ folder)
 - [ ] Confirm WiFi access at MEMA office
 - [ ] Pre-build a NotebookLM notebook with the October Market Update loaded (saves demo time)
