@@ -128,7 +128,17 @@ Capture on a whiteboard or notepad as you go.
 
 > "These aren't abstract. You're going to experience every one of them hands-on. By noon, this framework won't feel like a list — it'll feel like a reflex."
 
-**9:45 - 9:55 | Skills: Anatomy & Authoring Tips (10 min)**
+**9:45 - 9:52 | Projects: The Organizing Container (7 min)**
+- "Skills don't float in space — they live inside Projects."
+- A Project is a workspace with its own files, conversations, custom instructions, and skills. Think of it like a folder with superpowers.
+- Examples for MEMA:
+  - **"Monthly Market Report" Project** — contains past reports as reference files, a Market Report skill, a LinkedIn Post Generator skill
+  - **"Member Surveys" Project** — contains survey design skill, analysis skill, reference examples
+  - **"Policy Research" Project** — contains source docs, research synthesizer skill, briefing generator
+- "This is how a 'purpose-specific agent' actually works in practice — a Project scoped to one domain, with skills that automate the key workflows."
+- Both ChatGPT and Claude have Projects. Same concept, slightly different implementations.
+
+**9:52 - 9:58 | Skills: Anatomy & Authoring Tips (6 min)**
 - What a skill is: reusable workflow = instructions + examples + steps
 - Both ChatGPT and Claude have built-in skill wizards (skill-creator in ChatGPT; Claude understands the format natively)
 - Skills are an **open standard** (agentskills.io) — portable across tools
@@ -139,7 +149,7 @@ Capture on a whiteboard or notepad as you go.
   - Add accuracy guardrails ("Never fabricate statistics")
 - Where data lives: Skills on OpenAI servers, Enterprise DPA, not used for training
 
-**9:55 - 10:00 | Connectors, Retrieval & Document Discipline (5 min)**
+**9:58 - 10:00 | Connectors, Retrieval & Document Discipline (2 min)**
 - Connectors (Apps) link SharePoint, Drive, etc.
 - How retrieval works: chunk → embed → semantic search
 - Its limits: no metadata filtering, fixed chunking, periodic sync
@@ -148,70 +158,82 @@ Capture on a whiteboard or notepad as you go.
 ---
 
 ## Phase 3: BUILD (10:00 - 11:15 with 10-min break) — 75 min
-*Hands-on work. Every moment implicitly answers one of the 5 questions.*
+*Hands-on. We build a Project with 2 skills — explicitly answering Mike's outcomes #1 and #3. Every moment implicitly answers one of the 5 diagnostic questions.*
 
 ### Goals
-- Build 2 working skills in their own ChatGPT Enterprise instance (sharable)
-- Demo NotebookLM as a source-grounded alternative
-- Compare Claude side-by-side to reinforce "concepts transfer, tools differ"
-- Address Mike's outcomes #1, #2, #3 in action
+- Create a **Project** (the container for purpose-specific agents)
+- Build **Skill #1: Monthly Market Report** (Mike's outcome #1)
+- Build **Skill #2: Social Media Content Agent** (Mike's outcome #3 — exactly as described in his email)
+- Demo NotebookLM as a source-grounded alternative (supports slide generation for outcome #4)
+- Compare Claude side-by-side (Mike's outcome #2)
+- Address all of Mike's four outcomes through hands-on work
 
 ### Flow
 
-**10:00 - 10:15 | Demo: Anatomy of a Skill in Action (15 min)**
-- Jesse demos skill creation in ChatGPT Business
-- Show the Skills page, the skill-creator, conversational creation
-- Live demo: create a "Monthly Market Report" skill using the October PDF as reference
-- Install it, test it with raw bullet points
+**10:00 - 10:10 | Create Your Project (10 min)**
+- Everyone creates a new Project in their ChatGPT Enterprise workspace
+- Name it "Monthly Market Report"
+- Upload reference files: October 2025 Market Update PDF, any other example reports
+- Add initial custom instructions (voice, audience, quality standards)
+- **Why this first:** Skills live inside Projects. Setting up the Project right = better retrieval + better skill output.
+
+> Reinforces question 3 (where does data live? — inside the Project).
+
+**10:10 - 10:25 | Demo + Build: Market Report Skill (Mike's #1) (15 min)**
+- Jesse demos in his ChatGPT Business account inside his Project
+- Show the Skills page, skill-creator, conversational creation
+- Live-build: "Create a skill that produces monthly market updates matching the uploaded example"
+- Install, test with raw bullet points
+- **Then everyone builds their own version** in their Projects
 - **Teaching moments as they arise:**
   - Output matches the format? → Few-shot learning
   - Made up a statistic? → Hallucination / guardrails
   - Wrong output? → Tweak the instructions — that's the lever
 
-> Reinforces diagnostic questions 1 (outcome: their format), 4 (what breaks: hallucination), 5 (what lever: instructions).
+> Addresses Mike's outcome #1. Reinforces diagnostic questions 1 (outcome), 4 (what breaks), 5 (what lever).
 
-**10:15 - 10:35 | Hands-On: Build Your Market Report Skill (20 min)**
-- Everyone builds their own skill in their ChatGPT Enterprise instance
-- Upload the October PDF, create a skill that reproduces the format
-- Jesse circulates, helps troubleshoot
-- Share it with the team at the end
-- **Key selling point:** "One person built it. Everyone uses it. Consistently."
-
-> Reinforces questions 1, 2, 5 hands-on. They're living the framework.
-
-**10:35 - 10:45 | Connectors Deep Dive (10 min)**
+**10:25 - 10:35 | Connectors Deep Dive (10 min)**
 - Show connectors (Apps) in ChatGPT Enterprise
 - Explain the chunking/retrieval flow
 - Surface the limitations honestly
 - Show the metadata header workaround
 - Show a Claude connector briefly — different approach (on-demand into context)
 
-> Reinforces question 3 (where does the data live?).
+> Addresses Mike's outcome #2 (tool comparison). Reinforces question 3 (where does data live?).
 
 ---
 
-### BREAK (10:45 - 10:55) — 10 min
+### BREAK (10:35 - 10:45) — 10 min
 
 ---
 
-**10:55 - 11:05 | NotebookLM Demo: Source-Grounded Research (10 min)**
+**10:45 - 11:05 | Build: Social Media Content Agent (Mike's #3) (20 min)**
+
+This is the exact agent Mike described in his email: "an agent to scan, curate, synthesize and draft text for reference and approval for social media content, i.e., LinkedIn."
+
+- **Jesse demos first (5 min):**
+  - Take the Market Report skill's output (or a past report)
+  - Build a new skill: "Take a monthly market update and generate 3-5 LinkedIn posts highlighting key findings, in MEMA's voice, flagged for human review before posting"
+  - Install, test, show the output
+  - **Key framing:** "This is a purpose-specific agent. It scans your research, curates the highlights, synthesizes the insights, and drafts for your review. Exactly what Mike asked for — and you built it in 5 minutes."
+
+- **Then everyone builds their own (15 min):**
+  - In their same Project (or a new "Social Media" Project)
+  - Build a LinkedIn content skill using MEMA's voice
+  - Add guardrails: "Flag any claims that need verification. Mark as 'Ready for Review' not 'Ready to Post'."
+  - Test it on a real past market update
+  - Share with the team
+
+> Addresses Mike's outcome #3 directly. Reinforces all 5 diagnostic questions — they're now internalizing the framework.
+
+**11:05 - 11:15 | NotebookLM Demo: Source-Grounded Research + Slides (10 min)**
 - Open NotebookLM with the pre-loaded October Market Update
 - Ask questions → show grounded citations (no hallucination)
-- Generate a slide deck from sources → .pptx export
+- **Generate a slide deck from sources** → .pptx export (supports "slide content creation" from Mike's topic list)
 - Show the audio overview feature
 - **Why it matters:** Free, source-grounded, best slide generation for a research team
 
-> Reinforces question 4 (what could break: NotebookLM eliminates hallucination by grounding) and introduces a different tool for the same outcome.
-
-**11:05 - 11:15 | Role-Based Skill Building (10 min)**
-- Based on Discover phase, each person builds a skill for their specific role:
-  - **Writer/Editor:** Social Media Content Curator
-  - **Researcher/Analyst:** Source Summarizer
-  - **Designer/Visual:** Presentation Outliner
-  - **Project/Survey Lead:** Survey Question Designer
-- Share with the team
-- **If there's a visual/design role:** Quick fal.ai demo for image generation
-- **Bonus concept:** "Design Pass" skill — two skills in a pipeline (content + format)
+> Addresses the "slide content creation" request implicitly named in Mike's email. Reinforces question 4 (what could break: NotebookLM eliminates hallucination by grounding).
 
 ---
 
@@ -265,14 +287,18 @@ Capture on a whiteboard or notepad as you go.
 
 **11:45 - 11:55 | Action Plan — Your Sprint Backlog (10 min)**
 - **This week:**
-  1. Refine the Market Report skill with real data
-  2. Share it with the team
+  1. Refine the Market Report + Social Media skills with real data
+  2. Share the Project with the team
   3. Add metadata headers to your next 5 documents
   4. Try NotebookLM with your last 3 monthly reports
-- **This month:**
-  5. Build 2-3 more skills for recurring workflows
-  6. Audit document organization (naming, folders)
-  7. Explore Claude Pro ($20/month) — compare output
+- **This month — more skills to build in this Project or new ones:**
+  5. **Survey Question Designer** (Mike's topic list: Member Surveys)
+  6. **Source Summarizer** — 5 articles in, categorized summary out (Mike's topic list: Market Summaries / Curated News Feeds)
+  7. **Presentation Outliner** — report in, slide structure + speaker notes out (Mike's topic list: Slide Content Creation)
+  8. **Member Briefing Generator** — curated updates for specific member segments
+- **Also:**
+  9. Audit document organization (naming, folders, metadata)
+  10. Explore Claude Pro ($20/month) — compare output
 
 **11:55 - 12:00 | Close (5 min)**
 - Leave-behinds distributed (6 guides)
@@ -284,12 +310,25 @@ Capture on a whiteboard or notepad as you go.
 
 ## Appendix: Mike's Four Outcomes — Where They're Addressed
 
+From Mike's original email request (March 23, 2026):
+
 | Outcome | Where Addressed |
 |---|---|
-| #1 — Monthly market report using AI | Phase 3 (Market Report skill, NotebookLM demo) |
-| #2 — Best use cases for AI tools (Claude, ChatGPT, Gemini, Copilot) | Phase 2 (landscape), Phase 4 (Claude comparison) |
-| #3 — Build purpose-specific agents | Phase 3 (both skills: market report + role-based) |
-| #4 — AI for team productivity | Throughout — skills sharing, connectors, document discipline, action plan |
+| **#1 — Monthly market report using AI** | Phase 3: Skill #1 "Monthly Market Report" (explicit build); Phase 3 NotebookLM demo (source-grounded alternative) |
+| **#2 — Best use cases for AI tools** (Claude, ChatGPT, Gemini, Copilot, etc.) | Phase 2 (tool landscape intro); Phase 3 (Claude connector demo); Phase 4 (Claude side-by-side demo, honest tool comparison table) |
+| **#3 — Build purpose-specific agents** (scan, curate, synthesize, draft social content) | Phase 2 (Projects framing — agents are Projects + Skills); Phase 3: Skill #2 "Social Media Content Agent" — **built explicitly as Mike described it** |
+| **#4 — AI for team productivity** | Throughout — Projects + Skills sharing model, connectors, document discipline, action plan with additional skills to build |
+
+## Appendix: Mike's Topic List — Where They're Addressed
+
+From Mike's email, he listed specific topics of interest. Each is covered:
+
+| Topic | Where Addressed |
+|---|---|
+| **Slide Content Creation** | Phase 3 NotebookLM demo (generates slides from sources); Phase 4 tool landscape; Action plan: "Presentation Outliner" skill |
+| **Market Summaries / Curated News Feeds** | Phase 3 Skill #1 (Market Report) — this IS a market summary skill; Action plan: "Source Summarizer" skill as extension |
+| **Member Surveys** | Action plan: "Survey Question Designer" skill; Mentioned in Phase 2 Projects framing (Member Surveys project example) |
+| **Creation & Use of Agents** | Phase 2 (Projects + Skills as agent architecture); Phase 3 (building two purpose-specific agents hands-on) |
 
 ## Appendix: Key Concepts to Weave In (Not Lecture On)
 
