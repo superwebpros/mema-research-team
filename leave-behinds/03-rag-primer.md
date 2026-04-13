@@ -79,13 +79,23 @@ Semantic search (embedding-based) finds documents about tariffs even if they use
 
 ### A Simple Analogy
 
-Imagine plotting animals on a 2D chart:
-- X-axis: Domestication (wild → domestic)
-- Y-axis: Size (small → large)
+Imagine plotting text on a 2D chart — two dimensions that capture some aspect of meaning:
 
-A house cat and a dog would be close together (both domestic, medium-small). A tiger and a lion would be close (both wild, large). A house cat and a tiger are far apart in domestication but close in "cat-ness."
+![Embeddings in 2 dimensions](../docs/diagrams/embeddings-2-dimensions.png)
 
-Embeddings do this in 1,500+ dimensions — capturing meaning along axes like topic, tone, specificity, domain, and hundreds more that don't have human names.
+With just two axes, similar concepts already cluster together. Now add a third dimension:
+
+![Embeddings in 3 dimensions](../docs/diagrams/embedding-3-dimensions.png)
+
+More dimensions = more nuance. The AI can separate concepts that looked similar in 2D. Real embeddings do this in 1,500+ dimensions — capturing meaning along axes like topic, tone, specificity, domain, and hundreds more that don't have human names.
+
+### How Semantic Search Uses This
+
+When you ask a question, the AI converts it into a vector in the same space, then finds the closest document chunks — even if they use completely different words:
+
+![Similarity search](../docs/diagrams/embeddings-similarity-search.png)
+
+This is why searching for "import duties" can find a document that only mentions "tariffs" — the vectors are close because the *meaning* is close.
 
 ---
 
@@ -149,6 +159,10 @@ Most AI connectors extract text only. If critical data lives in a chart, add a t
 ### 5. Add Summaries at the Top
 
 Start every document with a 2-3 sentence summary. This gives the AI (and humans) a quick way to assess relevance.
+
+### 6. Use Lowercase, Hyphenated File Names
+
+Name files like `q1-2026-market-update.pdf`, not `Q1 2026 Market Update.pdf`. Spaces in file names cause problems across different operating systems, web servers, and AI pipelines. Lowercase with hyphens is universally safe and easier for both humans and machines to work with.
 
 ---
 
