@@ -1,5 +1,5 @@
 ---
-name: compound-discovery-facilitator-01
+name: compound-discovery-facilitator-02
 description: Run a structured AI discovery session. Guides conversation through problem inventory, knowledge mapping, and tool assessment — producing a clean structured document. Use when facilitating a workshop discovery phase or client intake.
 ---
 
