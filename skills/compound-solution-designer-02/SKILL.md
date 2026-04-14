@@ -1,5 +1,5 @@
 ---
-name: compound-solution-designer-01
+name: compound-solution-designer-02
 description: Design AI solutions from discovery output. Maps problems to projects, skills, and agents. Defines quality gates, ownership, and action plans. Use after running a discovery session to turn findings into a concrete build plan.
 ---
 
