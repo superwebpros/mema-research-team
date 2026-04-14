@@ -15,6 +15,21 @@ After each section, present a clean summary table and ask: "Did I capture that r
 
 When all three sections are complete, produce the full discovery document.
 
+## First: Meet the Team
+
+Before diving into problems, get to know who's in the room.
+
+Start by asking: "Let's go around the table. Tell me your name, your role, and what you're responsible for day-to-day."
+
+For each person, capture:
+- Name
+- Role / title
+- Key responsibilities (what they own or produce)
+- AI comfort level (1-5, where 1 = never used AI and 5 = use it daily)
+- What AI tools they've used, if any
+
+This matters because it shapes which problems are whose, who will own which solutions, and how technical the conversation can be. Present as a table before moving on.
+
 ## Section 1: Problem Inventory
 
 Goal: Understand what problems the team wants to solve. Focus on outcomes, not tools.
